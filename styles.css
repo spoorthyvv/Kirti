@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EAD7BB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.balloons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.balloons2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.balloons3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.balloons4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mirrored-gif {
+    transform: scaleX(-1);
+}
+
+.non-mirrored-gif {
+    transform: scaleX(1);
+}
+
+.balloon {
+    width: 130px;
+    height: 150px;
+    background-color: #f77;
+    border-radius: 50%;
+    position: relative;
+    margin: 10px;
+    animation: float 3s infinite;
+}
+
+
+
+.string {
+    width: 2px;
+    height: 200px;
+    background-color: #777;
+    position: relative;
+    top: 178px;
+    left: 50%;
+    transform: translateX(-1px);
+}
+
+.text {
+    font-size: 36px;
+    color: #444;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .balloon {
+        width: 160px;
+        height: 180px;
+    }
+
+    .string {
+        height: 250px;
+    }
+
+    .text {
+        font-size: 48px;
+    }
+}
